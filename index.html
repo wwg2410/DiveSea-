@@ -57,7 +57,7 @@
                     <div class="discover__create__nft">
 
                         <h1>Discover And Create NFTs</h1>
-                        <p class="disc__main__text">Discover, Create and Sell NFTs On Our NFT Marketplace  <br>With Over
+                        <p class="disc__main__text">Discover, Create and Sell NFTs On Our NFT Marketplace <br>With Over
                             Thousands Of NFTs And Get a
                             <span class="bonus__disc"> $20 bonus.</span>
                         </p>
@@ -102,40 +102,40 @@
                         </div>
                     </div>
 
-                      <div class="img__nft">
+                    <div class="img__nft">
                         <div class="img__back">
                             <img src="./img/Rectangle 3 (1).png" alt="">
                         </div>
                     </div>
 
 
-                      <div class="img__nft">
+                    <div class="img__nft">
                         <div class="img__arrow">
                             <img src="./img/Arrow 01.png" alt="">
                         </div>
 
 
                     </div>
-                      <div class="img__nft">
+                    <div class="img__nft">
                         <div class="img__dots">
                             <img src="./img/Dot Ornament.png" alt="">
                         </div>
                     </div>
 
-                  
-
-                        <div class="slider__controls">
-                            <img src="./img/Line.Left.png" alt="">
-                            <span class="border"></span>
-                            <img src="./img/Line.Right.png" alt="">
-                        </div>
 
 
+                    <div class="slider__controls">
+                        <img src="./img/Line.Left.png" alt="">
+                        <span class="border"></span>
+                        <img src="./img/Line.Right.png" alt="">
                     </div>
 
 
-
                 </div>
+
+
+
+            </div>
 
 
 
@@ -150,12 +150,103 @@
 
 
 
+        <section id="weekly__nft__slider">
+
+            <h2 class="title__slide">Weekly - Top NFT</h2>
+
+            <div class="my__swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper__card">
+                        <img src="./img/Mask Group orange.png" alt="">
+                        <span class="timer">07h 09m 12s</span>
+                        <div class="card__buy">
+                            <h3 class="text__main__card">NuEvey</h3>
+                            <div class="info__card">
+                                <p class="curr__bid">Current bid</p>
+                                <div class="price__info">
+                                    <!-- <img class="img__ethereum" src="./img/Vector.png"> -->
+                                    <p class="price__eth">1.75</p>
+                                </div>
+                            </div>
+                            <button class="place__bid">PLACE BID</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper__card">
+                        <img src="./img/Rectangle 3 center.png" alt="">
+                        <span class="timer">07h 09m 12s</span>
+                        <h3 class="text__main__card">Sun-Glass</h3>
+                        <div class="info__card">
+                            <p class="curr__bid">Current bid</p>
+                            <button class="place__bid">PLACE BID</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper__card">
+                        <img src="./img/Rectangle Rage.png" alt="">
+                        <span class="timer">07h 09m 12s</span>
+                        <h3 class="text__main__card">Sun-Glass</h3>
+                        <div class="info__card">
+                            <p class="curr__bid">Current bid</p>
+                            <button class="place__bid">PLACE BID</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper__card">
+                        <img src="./img/Mask Group white.png" alt="">
+                        <span class="timer">07h 09m 12s</span>
+                        <h3 class="text__main__card">NuEvey</h3>
+                        <div class="info__card">
+                            <p class="curr__bid">Current bid</p>
+                            <button class="place__bid">PLACE BID</button>
+                        </div>
+                    </div>
+<!-- 
+                    <div class="swiper__card">
+                        <img src="./img/planet.png" alt="">
+                        <span class="timer">07h 09m 12s</span>
+                        <h3 class="text__main__card">NuEvey</h3>
+                        <div class="info__card">
+                            <p class="curr__bid">Current bid</p>
+                            <button class="place__bid">PLACE BID</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper__card">
+                        <img src="./img/Rectangle 3 center.png" alt="">
+                        <span class="timer">07h 09m 12s</span>
+                        <h3 class="text__main__card">NuEvey</h3>
+                        <div class="info__card">
+                            <p class="curr__bid">Current bid</p>
+                            <button class="place__bid">PLACE BID</button>
+                        </div>
+                    </div>
+
+                    <div class="swiper__card">
+                        <img src="./img/Mask Group white.png" alt="">
+                        <span class="timer">07h 09m 12s</span>
+                        <h3 class="text__main__card">NuEvey</h3>
+                        <div class="info__card">
+                            <p class="curr__bid">Current bid</p>
+                            <button class="place__bid">PLACE BID</button>
+                        </div>
+                    </div> -->
+
+
+
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+            </div>
 
 
 
 
-
-
+        </section>
 
 
 
@@ -215,14 +306,32 @@
 
     <script>
         const swiper = new Swiper('.my__swiper', {
-            slidesPerView: 1,
-            speed: 600,
+            slidesPerView: 4,
+            spaceBetween: 20,
+
             navigation: {
-                nextEl: '.next',
-                prevEl: '.prev',
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
+
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                },
+                1024: {
+                    slidesPerView: 4,
+                }
+            }
         });
     </script>
+
+
+
+
+
 </body>
 
 </html>

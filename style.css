@@ -241,6 +241,124 @@
     background: #e6e8ec;
 }
 
+#weekly__nft__slider {
+    background: #f1f1f1;
+    width: 100%;
+    height: 873px;
+
+}
+
+
+
+.title__slide {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 60%;
+    color: #c5c5c5;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.swiper-wrapper {
+    display: flex;
+    gap: 40px;
+}
+
+
+.swiper__card {
+    width: 281px;
+    height: 402px;
+    border-radius: 23px;
+    box-shadow: 39px 12px 59px 0 rgba(199, 199, 199, 0.6);
+    background: #fff;
+    margin-top: 100px;
+    position: relative;
+
+}
+
+.swiper__card img {
+    border-radius: 23px;
+    width: 280px;
+    height: 282px;
+    padding: 14px;
+
+}
+
+
+
+
+.timer {
+    position: absolute;
+    border: 1.18px solid rgba(28, 29, 32, 0.08);
+    border-radius: 9px;
+    padding: 9px 14px;
+    width: 116px;
+    height: 37px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    box-shadow: 0 5px 14px 0 rgba(28, 29, 32, 0.08);
+    background: rgba(28, 29, 32, 0.35);
+    z-index: 1;
+    top: 28px;
+    left: 141px;
+}
+
+.text__main__card {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 21px;
+    color: #141416;
+    margin: 18px 0 14px 19px;
+}
+
+.card__buy {
+    width: 243px;
+    height: 95px;
+    display: flex;
+}
+
+.curr__bid {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #94a3b8;
+    padding: 0 135px 65px 0;
+
+}
+
+.price__info {
+    display: flex;
+    margin-top: 44px ;
+
+}
+
+.price__eth {
+    font-family: var(--font-family);
+    font-weight: 500;
+    color: #141416;
+}
+
+.place__bid {
+    border-radius: 12px;
+    padding: 9px 18px;
+    width: 121px;
+    height: 51px;
+    background: #141416;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+ 
+}
+
+
+.info__card {
+    display: flex;
+    margin: 14px 0 21px 18px;
+}
 
 
 
@@ -248,13 +366,60 @@
 
 
 
+.swiper-nav {
+    width: 100px;
+    height: 45px;
 
+    background: #fff;
+    border-radius: 14px;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+    padding: 0 15px;
 
+    margin: 30px auto 0;
 
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
 
+/* убираем стандартные стрелки swiper */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    display: none;
+}
 
+/* стили самих кнопок */
+.swiper-button-prev,
+.swiper-button-next {
+    position: static;
+    width: auto;
+    height: auto;
+    color: #111;
+    cursor: pointer;
+}
+
+/* кастомные стрелки */
+.swiper-button-prev::before,
+.swiper-button-next::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #111;
+    border-right: 2px solid #111;
+    display: block;
+}
+
+/* левая */
+.swiper-button-prev::before {
+    transform: rotate(-135deg);
+}
+
+/* правая */
+.swiper-button-next::before {
+    transform: rotate(45deg);
+}
 
 
 
