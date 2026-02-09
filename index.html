@@ -11,14 +11,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 
 </head>
 
 <body>
     <header>
         <div class="contaiher__header">
-            <div class="header__nav">
+            <nav class="header__nav">
                 <div class="header__left">
                     <img src="./img/Logo.svg" alt="DiveSea">
 
@@ -40,12 +42,187 @@
 
                     <button class="btn__connect">Connect Wallet</button>
                 </div>
-            </div>
+            </nav>
         </div>
     </header>
 
+    <main>
 
 
+        <section id="discover__create">
+
+            <div class="container__full">
+                <div class="discover__left__info">
+
+                    <div class="discover__create__nft">
+
+                        <h1>Discover And Create NFTs</h1>
+                        <p class="disc__main__text">Discover, Create and Sell NFTs On Our NFT Marketplace  <br>With Over
+                            Thousands Of NFTs And Get a
+                            <span class="bonus__disc"> $20 bonus.</span>
+                        </p>
+
+                        <div class="buttons">
+
+                            <button class="more">Explore More</button>
+                            <button class="nft">Create NFT</button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="information__comp">
+                        <div class="info__work">
+                            <h3 class="inf">430K+</h3>
+                            <p class="text__inf">Art Works</p>
+                        </div>
+
+                        <div class="info__creatos">
+                            <h3 class="inf">159K+</h3>
+                            <p class="text__inf">Creators</p>
+                        </div>
+
+                        <div class="info__collection">
+                            <h3 class="inf">87K+</h3>
+                            <p class="text__inf">Collections</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="img__right__contant">
+
+
+                    <div class="img__nft">
+                        <div class="img__main">
+                            <img src="./img/Rectangle 3 center.png" alt="">
+                        </div>
+                    </div>
+
+                      <div class="img__nft">
+                        <div class="img__back">
+                            <img src="./img/Rectangle 3 (1).png" alt="">
+                        </div>
+                    </div>
+
+
+                      <div class="img__nft">
+                        <div class="img__arrow">
+                            <img src="./img/Arrow 01.png" alt="">
+                        </div>
+
+
+                    </div>
+                      <div class="img__nft">
+                        <div class="img__dots">
+                            <img src="./img/Dot Ornament.png" alt="">
+                        </div>
+                    </div>
+
+                  
+
+                        <div class="slider__controls">
+                            <img src="./img/Line.Left.png" alt="">
+                            <span class="border"></span>
+                            <img src="./img/Line.Right.png" alt="">
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+            </div>
+
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        <div class="container__footer">
+            <div class="footer__navig">
+                <div class="navig__footer">
+
+                    <div class="logo__name">
+                        <img src="./img/Wave.svg" alt="Logo">
+                        <h3 class="DiveSea">DiveSea</h3>
+                    </div>
+
+
+                    <nav class="nav__footer">
+                        <ul>
+                            <li>Privacy Policy</li>
+                            <li>Term & Conditions</li>
+                            <li>About Us</li>
+                            <li>Contact</li>
+                        </ul>
+                    </nav>
+
+
+
+                </div>
+
+                <div class="line__footer"></div>
+
+                <div class="info__footer">
+
+                    <h5 class="eatly">© 2023 EATLY All Rights Reserved.</h5>
+
+                    <div class="social__company">
+
+                        <img src="./img/inst.png" alt="">
+                        <img src="./img/In.png" alt="">
+                        <img src="./img/Facebook.png" alt="">
+                        <img src="./img/twit.png" alt="">
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        const swiper = new Swiper('.my__swiper', {
+            slidesPerView: 1,
+            speed: 600,
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+        });
+    </script>
 </body>
 
 </html>
