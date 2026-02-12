@@ -248,7 +248,9 @@
 
 }
 
-
+.nft__slides{
+    position: relative;
+}
 
 .title__slide {
     font-family: var(--font-family);
@@ -394,10 +396,11 @@
     border: 1px solid #edf2f7;
     border-radius: 16px;
     position: absolute;
-    top: 1642px;
+    top:  1642px;
     right: 99px;
     box-shadow: 10px 10px 50px 0 rgba(20, 20, 22, 0.1);
     background: #fff;
+
 
 }
 
@@ -534,6 +537,39 @@
 }
 
 
+.container__collection {
+    width: 1247px;
+    margin: 120px auto;
+}
+
+.top__collection__main__text {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 45px;
+    color: #141416;
+
+}
+
+.info__collection {
+    display: flex;
+    gap: 341px;
+    padding-top: 90px;
+    justify-content: center;
+
+}
+
+.text__info__top {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    color: #93989a;
+}
+
+.right__text__info {
+    display: flex;
+    gap: 92px;
+}
 
 
 
