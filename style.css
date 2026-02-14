@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
 }
 
 :root {
@@ -152,6 +153,7 @@
     font-weight: 500;
     text-transform: uppercase;
     color: #fff;
+    cursor: pointer;
 
 }
 
@@ -164,12 +166,14 @@
     font-weight: 500;
     text-transform: uppercase;
     background: #fff;
+    cursor: pointer;
 }
 
 .information__comp {
     display: flex;
     margin: 82px 115px 165px 97px;
     gap: 65px;
+    align-items: center;
 }
 
 .inf {
@@ -248,7 +252,7 @@
 
 }
 
-.nft__slides{
+.nft__slides {
     position: relative;
 }
 
@@ -371,6 +375,7 @@
     position: absolute;
     top: 44px;
     right: 18px;
+    cursor: pointer;
 
 }
 
@@ -396,7 +401,7 @@
     border: 1px solid #edf2f7;
     border-radius: 16px;
     position: absolute;
-    top:  1642px;
+    top: 1642px;
     right: 99px;
     box-shadow: 10px 10px 50px 0 rgba(20, 20, 22, 0.1);
     background: #fff;
@@ -540,6 +545,7 @@
 .container__collection {
     width: 1247px;
     margin: 120px auto;
+    position: relative;
 }
 
 .top__collection__main__text {
@@ -551,7 +557,7 @@
 
 }
 
-.info__collection {
+.info__top__collection {
     display: flex;
     gap: 341px;
     padding-top: 90px;
@@ -570,6 +576,208 @@
     display: flex;
     gap: 92px;
 }
+
+
+.clients {
+    padding-top: 48px;
+}
+
+.client__num__1 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 41px;
+}
+
+.client__num__2 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 41px;
+
+}
+
+.client__num__3 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 41px;
+}
+
+.client__num__4 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 41px;
+}
+
+
+
+.client__logo__name {
+    width: 417px;
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+
+.logo__client {
+    border: 3.50px solid #fff;
+    border-radius: 1751px;
+    width: 84px;
+    height: 84px;
+}
+
+.login__client {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 28px;
+    color: #141416;
+}
+
+.name__client {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 22px;
+    color: #64748b;
+}
+
+.money__info {
+    display: flex;
+
+}
+
+.eth__cash__1 {
+    display: flex;
+    gap: 3px;
+    padding-right: 80px;
+}
+
+.eth__cash__2 {
+    display: flex;
+    gap: 3px;
+    padding-right: 145px;
+}
+
+.eth__logo {
+    width: 32px;
+    height: 32px;
+}
+
+.eth__money {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    color: #141416;
+}
+
+.percent__money__24h {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #10c352;
+    padding-right: 63px;
+}
+
+.owners {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 23px;
+    color: #010101;
+    padding-right: 140px;
+}
+
+.items {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 23px;
+    color: #010101;
+}
+
+.border__line {
+    border: 1.69px solid #ebe9e9;
+    width: 1233px;
+    height: 0px;
+    margin-bottom: 41px;
+}
+
+.explore__all {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 17px;
+    /* margin-top: 85px; */
+    color: #acadb9;
+    position: absolute;
+    right: 40px;
+}
+
+
+
+.container__market {
+    margin-top: 110px;
+}
+
+.main__text__marketplace {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 45px;
+    color: #141416;
+    text-align: center;
+    margin-bottom: 65px;
+}
+
+
+.buttons__market {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 100px;
+}
+
+.butt__market__all {
+    border: 2.21px solid #141416;
+    border-radius: 13px;
+    padding: 17px;
+    width: 72px;
+    height: 56px;
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 15px;
+    color: #1a202c;
+}
+
+.butt__market {
+    border: 2.21px solid #141416;
+    border-radius: 13px;
+    padding: 17px;
+    width: 137px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--third-family);
+    font-weight: 600;
+    font-size: 15px;
+    color: #1a202c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
