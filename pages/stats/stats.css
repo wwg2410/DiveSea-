@@ -139,6 +139,7 @@
     display: flex;
     justify-content: center;
     gap: 22px;
+
 }
 
 
@@ -157,21 +158,24 @@
     font-size: 15px;
     color: #1a202c;
     cursor: pointer;
+    background: #fff;
 }
 
 
-
+.grid__stats {
+    width: 100%;
+}
 
 
 .info__stats {
-    display: flex;
-    gap: 341px;
-    padding-top: 90px;
-    justify-content: space-between;
     width: 100%;
-    width: 1247px;
+    width: 100%;
     height: 79px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
+    gap: 15px;
+
 
 }
 
@@ -180,11 +184,6 @@
     font-weight: 800;
     font-size: 22px;
     color: #1a202c;
-    display: flex;
-    gap: 15px;
-
-    align-items: center;
-    padding-left: 96px;
 
 }
 
@@ -200,65 +199,34 @@
     font-weight: 800;
     font-size: 22px;
     color: #1a202c;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.right__text__info {
-    display: flex;
-    align-items: center;
 
 
 }
-
-
-
-
-
 
 
 
 
 
 .clients {
-    padding: 36px 96px 359px;
+    padding: 36px 96px;
 
 }
 
-.client__num__1 {
-    display: flex;
+.client__row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 16px;
-    margin-bottom: 41px;
+    padding: 28px 0;
+
+    border-bottom: 1px solid #ebe9e9;
 }
 
-.client__num__2 {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 41px;
 
-}
-
-.client__num__3 {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 41px;
-}
-
-.client__num__4 {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 41px;
-}
 
 
 
 .client__logo__name {
-    width: 417px;
     display: flex;
     gap: 23px;
     align-items: center;
@@ -285,21 +253,17 @@
     color: #64748b;
 }
 
-.money__info {
-    display: flex;
 
-}
 
 .eth__cash__1 {
     display: flex;
     gap: 3px;
-    padding-right: 80px;
 }
 
 .eth__cash__2 {
     display: flex;
     gap: 3px;
-    padding-right: 145px;
+
 }
 
 .eth__logo {
@@ -319,7 +283,7 @@
     font-weight: 500;
     font-size: 24px;
     color: #10c352;
-    padding-right: 63px;
+
 }
 
 .owners {
@@ -327,7 +291,6 @@
     font-weight: 500;
     font-size: 23px;
     color: #010101;
-    padding-right: 140px;
 }
 
 .items {
@@ -337,12 +300,12 @@
     color: #010101;
 }
 
-.border__line {
+/* .border__line {
     border: 1.69px solid #ebe9e9;
-    width: 1233px;
+    width: 100%;
     height: 0px;
     margin-bottom: 41px;
-}
+} */
 
 
 

@@ -117,6 +117,22 @@
 
 
 
+.create__container {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    margin-bottom: 210px;
+}
+
+
+
+.text__form {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+}
 
 
 
@@ -124,36 +140,389 @@
 
 
 
+.create__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 45px;
+    color: #141416;
+    margin: 155px 0 153px 0;
+    text-align: center;
+}
+
+
+.create__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+    margin-left: 96px;
+}
+
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+
+.text__name {
+    border-radius: 12px;
+    width: 702px;
+    height: 62px;
+    background: #efefef;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 125%;
+    color: #9596a6;
+    padding: 23px 0 22px 26px;
+    border: none;
+    outline: none;
+
+}
+
+.name__label {
+    width: 702px;
+    position: relative;
+}
+
+.edit__name {
+    position: absolute;
+    bottom: 20px;
+    right: 27px;
+}
+
+
+.text__descript {
+
+    border-radius: 12px;
+    width: 702px;
+    height: 165px;
+    background: #efefef;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    color: #9596a6;
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 29px 0 118px 26px;
+}
+
+
+.description {
+    width: 702px;
+    height: 210px;
+    position: relative;
+}
+
+.edit__discript {
+    position: absolute;
+    top: 30%;
+
+    right: 27px;
+
+}
+
+.royalty__size {
+    display: flex;
+    gap: 35px;
+}
+
+
+
+.form__group__tags {
+    margin-bottom: 35px;
+}
+
+
+.tags__wrap {
+    border-radius: 12px;
+    width: 702px;
+    height: 62px;
+    background: #efefef;
+    border: none;
+    outline: none;
+
+    padding-left: 27px;
+}
+
+.tags {
+    position: relative;
+    width: 702px;
+}
+
+.edit__tag {
+    position: absolute;
+    bottom: 0;
+    right: 28px;
+}
+
+
+.form__column__price {
+
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    gap: 35px;
+    align-items: center;
+
+
+}
+
+.price__select {
+    display: flex;
+    border-radius: 12px;
+    width: 492px;
+
+
+}
+
+
+.etc__price,
+select {
+    width: 100%;
+    padding: 18px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 12px;
+    color: #111;
+    outline: none;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+    color: #9596a6;
+
+}
+
+
+
+
+.royalty__wrap {
+    border-radius: 12px;
+    width: 146px;
+    height: 63px;
+    background: #efefef;
+    border: none;
+    outline: none;
+    padding: 21px 72px 22px 26px;
+}
+
+.size__wrap {
+
+    border-radius: 12px;
+    width: 131px;
+    height: 63px;
+    background: #efefef;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    color: #9596a6;
+    border: none;
+    outline: none;
+    padding: 21px 25px;
+}
 
 
 
 
 
 
+input::placeholder {
+    color: #9e9e9e;
+}
+
+
+
+
+.price__select {
+    display: flex;
+    align-items: center;
+    background: #efefef;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.price__currency select {
+    border: none;
+    background: transparent;
+    padding: 18px 20px;
+    font-size: 14px;
+}
+
+.price__divider {
+    width: 1px;
+    height: 39px;
+    background: #dcdcdc;
+}
 
 
 
 
 
+.number__stock {
+    border-radius: 12px;
+    width: 171px;
+    height: 62px;
+    background: #efefef;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: -0.02em;
+    color: #9596a6;
+    border: none;
+    outline: none;
+    padding-left: 21px;
+}
+
+.toggle__1,
+.toggle__2 {
+    display: flex;
+    width: 699px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+
+
+
+.mini__form {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    color: #9596a6;
+
+}
 
 
 
 
 
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch__input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: #e5e7eb;
+    transition: 0.3s;
+    border-radius: 50px;
+}
+
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    top: 3px;
+
+    background: #000;
+
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+
+.switch__input:checked+.slider {
+    background-color: #141416;
+}
+
+.switch__input:checked+.slider::before {
+    transform: translateX(22px);
+    background: #fff;
+}
 
 
 
 
 
+.btn__primary__create {
+    width: 705px;
+    height: 66px;
+    margin-top: 110px;
+    border-radius: 12px;
+    background: #000;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
 
 
 
+.btn__primary__create:hover {
+    opacity: 0.5;
+}
 
 
 
+.upload__box {
+    border-radius: 31px;
+    width: 468px;
+    height: 413px;
+    box-shadow: 0 82px 82px -61px rgba(15, 15, 15, 0.1), 0 -82px 80px 0 rgba(0, 0, 0, 0.05);
+    background: #fcfcfd;
+    text-align: center;
+}
 
 
 
+.img__format {
+    padding: 148px 144px 148px 144px;
+}
+
+
+.img__download {
+    width: 52px;
+    margin-bottom: 12px;
+}
+
+.format__download {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 167%;
+    text-align: center;
+    color: #777e90;
+}
+
+
+
+.btn__secondary {
+    border-radius: 16px;
+    width: 327px;
+    height: 63px;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    background: #141416;
+    cursor: pointer;
+    margin: 57px 79px 0 62px ;
+  
+}
+
+.btn__secondary:hover{
+      opacity: 0.5;
+}
 
 
 
@@ -173,7 +542,6 @@
 .navig__footer {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     gap: 414px;
     padding: 92px 96px 0;
     margin-bottom: 25px;
