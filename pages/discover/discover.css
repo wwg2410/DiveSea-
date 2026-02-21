@@ -153,14 +153,14 @@
 
 
 
-.top__cards__nft{
+.top__cards__nft {
     display: flex;
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.bott__cards__nft{
+.bott__cards__nft {
     display: flex;
     gap: 40px;
     justify-content: center;
@@ -176,14 +176,14 @@
 
 
 .slide__nft__card {
-  
+
     width: 282px;
     border-radius: 23px;
     box-shadow: 39px 12px 59px 0 rgba(199, 199, 199, 0.6);
     background: #fff;
     margin-top: 100px;
     position: relative;
-   
+
 
 }
 
@@ -298,6 +298,213 @@
 
 }
 
+
+
+
+
+
+.bid__modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2.12px solid black;
+    stroke: #000;
+    background: #fff;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 10;
+}
+
+
+.bid__modal.active {
+    visibility: visible;
+
+
+}
+
+
+.bid__content {
+    border-radius: 21px;
+    fill: #fff;
+    stroke-width: 2.12px;
+    stroke: #000;
+    position: relative;
+}
+
+.modal__close {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+.bid__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+.bid__date {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #888;
+}
+
+
+.bid__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -6px 12px 20px 0 rgba(16, 16, 16, 0.15);
+    background: #fff;
+    padding: 18px;
+    margin-top: 19px;
+    border-radius: 11px;
+    width: 401px;
+}
+
+
+.bid__left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.bid__avatar {
+    width: 64px;
+    height: 64px;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+.avatar__bid {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+
+
+.verif__bid {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(25% -25%);
+    z-index: 2;
+}
+
+
+
+
+.bid__name {
+    font-family: var(--font-family);
+    font-weight: 500;
+
+
+}
+
+.bid__time {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #9c9c9c;
+}
+
+
+.bid__price {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-left: 50px;
+
+}
+
+
+.price__bid {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+.your__bid {
+    margin: 45px 0 12px 0;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+
+}
+
+
+.bid__input {
+    display: flex;
+    border: 1.13px solid #141416;
+    border-radius: 18px;
+    width: 396px;
+    height: 70px;
+    overflow: hidden;
+    outline: none;
+}
+
+
+.eth__select {
+    border-radius: 18px 0 0 18px;
+    padding: 24px 15px;
+    width: 157px;
+    height: 70px;
+    background: #141416;
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 20px 74px 20px 46px;
+}
+
+.eth__select__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 24px;
+    font-size: 20px;
+}
+
+
+
+.submit__bid {
+    margin: 12px 0 40px 0;
+    border-radius: 18px;
+    width: 396px;
+    height: 70px;
+    background: #141416;
+    font-family: var(--font-family);
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+
+.submit__bid:hover {
+    opacity: 0.85;
+}
 
 
 
