@@ -24,6 +24,9 @@
     /* width: 1251px;
     margin: 45px 96px 0 0; */
     margin: 45px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 
@@ -1369,6 +1372,192 @@
 
 
 
+.burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+
+.burger::before,
+.burger::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background: #141416;
+    transition: 0.3s;
+  
+
+
+}
+
+
+.burger::before {
+    top: 14px;
+  
+}
 
 
 
+.burger::after {
+    bottom: 14px;
+
+}
+
+
+
+
+
+.burger {
+    background: linear-gradient(#141416, #141416) center / 20px  3px no-repeat ;
+}
+
+
+
+.burger.active {
+    background: #f5f5f5;
+
+}
+
+
+.burger.active::before {
+    transform:  rotate(45deg);
+    top: 18px;
+    box-shadow: none;
+}
+
+.burger.active::after {
+
+    transform: rotate(-45deg);
+    bottom: 18px;
+
+}
+
+
+
+
+
+.logo__mobile {
+    display: none;
+
+}
+
+.mobile__menu {
+
+    position: fixed;
+    top: 200px;
+    left: 0;
+    width: 300px;
+    background: #fff;
+    padding: 100px 30px;
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    transition: 0.4s;
+    transform: translateX(-100%);
+}
+
+
+.mobile__menu ul {
+    padding: 0;
+
+}
+
+.mobile__menu li {
+    margin-bottom: 25px;
+}
+
+.mobile__menu a {
+    text-decoration: none;
+    font-family: var(--second-family);
+    color: #606060;
+}
+
+
+.mobile__connect {
+    width: 200px;
+    border-radius: 16px;
+    padding: 16px 24px;
+    font-family: var(--second-family);
+    border: none;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 40px;
+
+}
+
+.mobile__menu.active {
+    transform: translateX(50%);
+    text-align: center;
+}
+
+
+
+
+.no__scroll {
+    overflow: hidden;
+}
+
+
+@media(max-width: 500px) {
+
+
+    .container__header {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .logo__dek__mob {
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        width: 141px;
+
+        /* margin-top: 30px; */
+    }
+
+    .logo__header {
+        width: 47px;
+        height: 47px;
+    }
+
+    .logo__mobile {
+        display: block;
+        width: 88px;
+
+
+    }
+
+
+
+    .header__navig,
+    .search__wrapp,
+    .btn__connect {
+        display: none;
+    }
+
+
+    .burger {
+        display: flex;
+       align-items: center;
+    
+    }
+
+
+
+
+
+}

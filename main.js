@@ -3,24 +3,20 @@
 
 
 
+let burger = document.querySelector(".burger");
+let mobileMenu = document.querySelector(".mobile__menu")
 
 
-
-
-
-let form = document.querySelector(".form");
-
-
-const clickPopup = () => {
-  form.classList.toggle("active");
+const clickBurger= () => {
+  burger.classList.toggle("active");
+  mobileMenu.classList.toggle("active")
+  document.body.classList.toggle("no__scroll")
 };
 
-form.addEventListener("click", (e) => {
+burger.addEventListener("click", (e) => {
   e.preventDefault();
+  clickBurger();
 });
-
-
-
 
 
 
